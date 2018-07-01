@@ -6,7 +6,7 @@ int[] fishy= {5, 50, 280, 100, 240, 105, 20, 220, 90, 180};
 void setup(){
 size(750,300);
 frameRate(30);
-background(30,60,250);
+background(30,60,150);
 noStroke();
 fill(200,10,0);
 }
@@ -14,6 +14,8 @@ fill(200,10,0);
 
 void draw(){
 
+  background(30,60,150);
+  
 for(int i=0; i<10; i=i+1){
 ellipse(fishx[i], fishy[i], 50,20);
 fishx[i]= fishx[i] + speed[i];
