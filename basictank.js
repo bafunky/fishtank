@@ -20,10 +20,10 @@ void draw(){
   
 for(int i=0; i<10; i=i+1){
   fill(fishcolor[i]);
-  ellipse(fishx[i], fishy[i], 50,20);
+  ellipse(fishx[i], fishy[i], 50,25);
   triangle(fishx[i]-40, fishy[i]+15, fishx[i]-40, fishy[i]-15, fishx[i]-20, fishy[i]);
   fill(0,0,0);
-  ellipse(fishx[i]+15, fishy[i]+5, 3,3);
+  ellipse(fishx[i]+15, fishy[i]-7, 3,3);
   fishx[i]= fishx[i] + speed[i];
 
   if(fishx[i] > 800){
