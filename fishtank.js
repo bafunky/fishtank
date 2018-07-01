@@ -1,9 +1,17 @@
-size(400,400);
+
 int fx=0;
 int fx1=80;
 int fx2=360;
 int bubb1=400;
 int bubb2=200;
+
+void setup(){
+ size(400,400);
+  frameRate(30);
+  
+}
+
+
 void draw =function(){
 void bubbles=function(size,bubbleX,bubbleY){
   int rand = round(random(-2,2));
