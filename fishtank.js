@@ -1,13 +1,12 @@
-frameRate(30);
 size(400,400);
-var fx=0;
-var fx1=80;
-var fx2=360;
-var bubb1=400;
-var bubb2=200;
-var draw =function(){
-var bubbles=function(size,bubbleX,bubbleY){
-  var rand = random(-2,2);
+int fx=0;
+int fx1=80;
+int fx2=360;
+int bubb1=400;
+int bubb2=200;
+void draw =function(){
+void bubbles=function(size,bubbleX,bubbleY){
+  int rand = round(random(-2,2));
 
   fill(31, 145, 134);
   ellipse(bubbleX+rand,bubbleY,size,size);
@@ -16,7 +15,7 @@ var bubbles=function(size,bubbleX,bubbleY){
   ellipse((bubbleX+rand)-(size/5),bubbleY-(size/3.5),size/4,size/5);
   
 };
-var fish=function(centerX, centerY, bodyLength, bodyHeight, bodyColor,tailColor,eyeSize,eyeColor){
+void fish=function(centerX, centerY, bodyLength, bodyHeight, bodyColor,tailColor,eyeSize,eyeColor){
 
 noStroke();
 fill(bodyColor);
@@ -24,8 +23,8 @@ fill(bodyColor);
 ellipse(centerX, centerY, bodyLength, bodyHeight);
 // tail
 fill(tailColor);
-var tailWidth = bodyLength/4;
-var tailHeight = bodyHeight/2;
+int tailWidth = round(bodyLength/4);
+int tailHeight = round(bodyHeight/2);
 triangle(centerX-bodyLength/2, centerY,
          centerX-bodyLength/2-tailWidth, centerY-tailHeight,
          centerX-bodyLength/2-tailWidth, centerY+tailHeight);
