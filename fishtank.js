@@ -12,7 +12,7 @@ void setup(){
 }
 
 
-void draw =function(){
+void draw(){
 void bubbles=function(size,bubbleX,bubbleY){
   int rand = round(random(-2,2));
 
